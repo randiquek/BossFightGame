@@ -10,13 +10,12 @@ public class Player extends Character {
         this.playerName = playerName;
     }
 
-    public
 //    public void displayPlayerInfo() {
 //        startingHealth = 200;
 //        System.out.println("Player: " + playerName + "Health: " + startingHealth );
 //    }
 
-    public int playerAttack(int attack) {
-      return 0;
-    }
+//    public int playerAttack(int attack) {
+//      return 0;
+//    }
 }

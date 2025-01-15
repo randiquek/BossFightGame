@@ -11,10 +11,8 @@ public class MenuController {
     boolean isRunning = false;
     String playerName;
 
-    public MenuController(ConsoleIO io, Player player, Boss boss) {
+    public MenuController(ConsoleIO io) {
         this.io = io;
-        this.player = player;
-        this.boss = boss;
     }
 
     public void runGame() {
@@ -40,6 +38,7 @@ public class MenuController {
             }
 
             render();
+            break;
         }
     }
 
@@ -54,8 +53,7 @@ public class MenuController {
     }
 
     public void render() {
-        io.displayMessage("You attack first");
-        player.displayPlayerInfo();
+        io.displayMessage(playerName + " attacks first");
 
     }
 
