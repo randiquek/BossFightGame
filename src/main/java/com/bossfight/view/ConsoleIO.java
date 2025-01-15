@@ -18,4 +18,8 @@ public class ConsoleIO {
         displayPrompt(prompt);
         return console.nextLine();
     }
+
+    public int getInteger() {
+         return Integer.parseInt(console.nextLine());
+    }
 }
