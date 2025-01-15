@@ -1,21 +1,18 @@
 package com.bossfight.model;
 
 import com.bossfight.controller.MenuController;
+import com.bossfight.view.ConsoleIO;
+
+import java.util.Random;
 
 public class Player extends Character {
-    MenuController playerName;
+    ConsoleIO io;
 
-    public Player(MenuController playerName, int startingHealth, int currentHealth, int attack) {
-        super(startingHealth, currentHealth, attack);
-        this.playerName = playerName;
+    public Player(String playerName, int startingHealth, int currentHealth, int attack) {
+        super(playerName, startingHealth, currentHealth, attack);
     }
 
-//    public void displayPlayerInfo() {
-//        startingHealth = 200;
-//        System.out.println("Player: " + playerName + "Health: " + startingHealth );
-//    }
-
 //    public int playerAttack(int attack) {
-//      return 0;
+//        String playerChoice = io.getPlayerInput()
 //    }
 }

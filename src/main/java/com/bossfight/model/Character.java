@@ -1,11 +1,15 @@
 package com.bossfight.model;
 
+import java.util.Random;
+
 public class Character {
     int startingHealth;
     int currentHealth;
     int attack;
+    String name;
 
-    public Character(int startingHealth, int currentHealth, int attack) {
+    public Character(String name, int startingHealth, int currentHealth, int attack) {
+        this.name = name;
         this.startingHealth = startingHealth;
         this.currentHealth = currentHealth;
         this.attack = attack;
@@ -33,6 +37,10 @@ public class Character {
 
     public void setAttack(int attack) {
         this.attack = attack;
+    }
+
+    public void displayInfo() {
+        System.out.println(name + " Health: " + currentHealth + "/" + startingHealth);
     }
 
 }
